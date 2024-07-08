@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Girl</title>
+    <style>
+      h1 {
+        display: none;
+      }
+      section {
+        max-width: 950px;
+        background-color: black;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+      }
+
+      img {
+        width: 60%;
+        height: auto;
+        display: block;
+        transition: 0.2s;
+      }
+      [alt='Girl'] {
+        top: 10%;
+        position: relative;
+        margin: 0 0 0 auto;
+        animation: agirl 1s both;
+      }
+      [src='images/splash.png'] {
+        height: 100%;
+        top: 0%;
+        left: 0;
+        position: absolute;
+        animation: agirl 1s 0.5s both;
+      }
+      @keyframes agirl {
+        from {
+          transform: translateX(20%);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Girl</h1>
+      <img src="images/girl.png" alt="Girl" />
+      <img src="images/splash.png" alt="Splash" />
+    </section>
+  </body>
+</html>
