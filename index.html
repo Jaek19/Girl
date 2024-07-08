@@ -14,6 +14,12 @@
         margin: auto;
         position: relative;
         overflow: hidden;
+        transition: 1s;
+      }
+      section:hover {
+        filter: hue-rotate(7deg) blur(2px);
+        background-color: aqua;
+        transform: scale(1.1);
       }
 
       img {
@@ -43,6 +49,11 @@
         to {
           transform: translateX(0);
           opacity: 1;
+        }
+      }
+      @media (max-width: 600px) {
+        section {
+          background-color: red;
         }
       }
     </style>
